@@ -1,0 +1,108 @@
+body {
+    background-color: transparent;
+    color: #ffc266;
+    font-family: 'SUISSEINTL-THIN', sans-serif;
+}
+#myProgress {
+    width: 420px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#myBar {
+    width: 0%;
+    height: 5px;
+    background-color: #a2832e;
+    border-radius: 10px;
+}
+.btn-action {
+    padding-top: 10px;
+    width: 30px;
+}
+.btn-ctn, .infos-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infos-ctn {
+    padding-top: 20px;
+}
+.btn-ctn > div {
+    padding: 5px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.infos-ctn > div {
+    margin-bottom: 8px;
+    color: black;
+    font-family: "SUISSEINTL-THIN";
+    font-size: 30px;
+}
+.first-btn {
+    margin-left: 3px;
+}
+.duration {
+    margin-left: 10px;
+}
+.title {
+    margin-left: 10px;
+    width: 210px;
+    text-align: center;
+}
+.player-ctn {
+    border-radius: 15px;
+    width: 420px;
+    padding: 10px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: black 0px 0px 10px;
+}
+.playlist-track-ctn {
+    display: flex;
+    background-color: transparent;
+    margin-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.playlist-track-ctn:last-child {
+    /*border: 1px solid #ffc266; */
+}
+.playlist-track-ctn > div {
+    margin: 10px;
+}
+.playlist-info-track {
+    width: 80%;
+}
+.playlist-info-track, .playlist-duration {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #a2832e;
+    font-size: 14px;
+    pointer-events: none;
+}
+.playlist-ctn {
+    padding-bottom: 20px;
+}
+.active-track {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #a2832e;
+!important;
+    font-weight: bold;
+}
+
+.active-track > .playlist-info-track, .active-track > .playlist-duration, .active-track > .playlist-btn-play {
+    color: black;
+}
+
+
+.playlist-btn-play {
+    pointer-events: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.fas {
+    color: #a2832e;
+    font-size: 20px;
+}

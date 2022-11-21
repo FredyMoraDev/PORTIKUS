@@ -1,0 +1,133 @@
+@import url("../fonts");
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    transition: all 2s;
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    float: right;
+}
+
+li:hover{
+    color: #111;
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #a2832e;
+;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+p {
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    background-color: transparent;
+}
+h1 {
+    font-size: 36px;
+    color: black;
+}
+h2{
+    display: inline-block;
+    margin-right: 60px;
+    color: black;
+}
+body {
+    font-family: 'SUISSEINTL-THIN', sans-serif;
+    background: url("../image/todoelfondo.png") ;
+}
+.nav {
+    box-shadow: black 0px 0px 10px;
+    padding:0px;
+    width:100%;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    color: black;
+    background-color: transparent;
+}
+.nav__logo {
+    display: inline-block;
+}
+.container2{
+    width: 100%;
+    margin:auto;
+    margin-top: 150px;
+    background-color: transparent;
+}
+.container__text{
+    width: 90%;
+    margin:auto;
+    padding: 55px;
+    background-color: transparent;
+    color: black;
+}
+nav.abajo{
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 0px;
+}
+
+.container-broadcastings{
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+    padding: 0px;
+    color: black;
+}
+
+
+p .container-broadcastings{
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+.live {
+    float: left;
+}
+
+.pulse {
+    margin-right: 100px;
+    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+@-webkit-keyframes redPulse {
+    from {
+        background-color: transparent;
+    //-webkit-box-shadow: 0 0 9px #333;
+    }
+    50% {
+        background-color: #fa0b2b;
+        -webkit-box-shadow: 0 0 18px #e33100;
+    }
+    to {
+        background-color: #bc330d;
+    //-webkit-box-shadow: 0 0 9px #333;
+    }
+}
+div.pulse.red {
+    -webkit-animation-name: redPulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.audio--player{
+    width: 30%;
+    height: 50%;
+    background-color: transparent;
+    display: flex;
+    margin-top: 0px;
+    padding: 0px;
+}
