@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <title>PORTIKUS</title>
+    <link rel="stylesheet" href="./image/favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos3.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel=stylesheet href="./css/audioplayer.css" media=all>
+    <link rel="stylesheet" href="responsive-nav.css">
+    <script src="responsive-nav.js"></script>
+
+</head>
+<body>
+<header class="hero">
+    <nav class="nav container">
+        <div class="nav__logo">
+            <h2 class="nav__title" style="color:black">INFLORESCENCE</h2>
+            <h2 class="nav__title" style="color:black">Ximena Garrido-Lecca</h2>
+        </div>
+
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="About.html" class="nav__links">About</a>
+            </li>
+            <li class="nav__items">
+                <a href="Archive.html" class="nav__links">Archive</a>
+            </li>
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">PORTIKUS</a>
+            </li>
+
+        </ul>
+        <div class="pulse red live" style="display:inline-block">
+            <span style="color:black">...LIVE</span>
+        </div>
+
+        <audio id="player" src="http://radioinflorescence.out.airtime.pro:8000/radioinflorescence_a"
+               type="audio/ogg" style="display: inline-block"></audio>
+        <div>
+            <button onclick="document.getElementById('player').play()">▷</button>
+            <button onclick="document.getElementById('player').pause()">☐</button>
+            <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+            <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+        </div>
+        </div>
+
+    </nav>
+</header>
+<div class="container2">
+    <div class="container__text">
+        <h1>INFLORESCENCE</h1><br>
+        <p>Corn is one of the most important crops in the global economy. While it held a cen-tral position in<br>
+            pre-Columbian mythology and was a major source of nourishment, its origin as a plant native to the
+            Americas<br>
+            has been widely overlooked. Considered the origin of humanity by the Aztecs and Maya, the cultivation of<br>
+            corn has shaped all as-pects of life for millennia, from social environments to the measurements of time. In<br>
+            Ximena Garrido-Lecca’s exhibition Inflorescence at Portikus, the artist explores the crop’s multilayered<br>
+            meanings in relation to ancient beliefs, the colonial appropriation of knowledge and wealth, and the<br>
+            processes of modernization.<br><br>
+
+            Conceived in the fall months, the harvesting season of maize in Europe, the exhibi-tion links
+            traditional<br>
+            techniques of stacking and threshing corn in Latin America with the telecommunication infrastructures
+            that<br>
+            populate today’s rural areas. A series of sculptures made of corn plants from the fields of Hesse are<br>
+            mounted with antennas and megaphones that emit radio interferences as well as Mayan myths encrypted in Morse<br>
+            code. Composed of maize modules, vases, and stones, the circular threshing floor is a place for
+            gathering<br>
+            and regular activations for the production of the tradi-tional Peruvian drink chicha de jora (corn
+            beer).<br>
+            Regarded as the beverage of the gods by ancient civilizations, chicha de jora today is still a symbol of<br>
+            hospitality. By enhanc-ing ancient rituals centered around corn, systems of communication and the
+            commu-nal<br>
+            value of broadcasting, Garrido-Lecca creates a site where cultural transmissions and social exchanges
+            can<br>
+            take place. Considering cultural institutions not only pro-duce but also transmit knowledge, Portikus<br>
+            features a radio station over the course of the show. Radio Inflorescence is a bi-weekly program, comprising<br>
+            a series of com-missioned podcasts, material from the sound archives from Fonoteca Nacional de México
+            and<br>
+            shows developed in collaboration with the Frankfurt-based EOS Radio (www.eosradio.de) and Radio X (FM
+            91,8MHz).<br><br>
+
+            Inflorescence reflects on the radical shifts in our relationship to the natural world, fol-lowing industrial<br>
+            revolutions, social paradigms, and the current configuration of the information age. Both haystacks and<br>
+            antennas are also evocative of the rural land-scape, whose abandonment by capitalism has been a
+            continuous<br>
+            thread in the artist’s work.<br><br>
+
+            Ximena Garrido-Lecca (b. 1980 in Lima, Peru) is an artist based in Mexico City, Mexico. Her works have
+            been<br>
+            exhibited among others at the Museo Madre, Naples (2021), the 34th Bienal de São Paulo (2020), Museo de Arte<br>
+            Contemporáneo, Lima (2019), Museo de Arte Latinoamericano de Buenos Aires (2018), Sala de Arte Público<br>
+            Siqueiros (SAPS), Mexico City (2017). Inflorescence is the artist’s first institutional solo exhibition
+            in<br>
+            Germany.<br><br><br><br><br><br><br>
+        </p>
+        <div>
+            <h3>PORTIKUS Alte Brücke 2 / Maininsel 60594 Frankfurt am Main Germany</h3><br>
+            <h3 style="color:#a2832e">OPENING HOURS Tue–Fri 12–19h | Sat–Sun 11–19h</h3><br><br>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("nav");
+            header.classList.toggle("abajo", window.scrollY > 0);
+        })
+    </script>
+    <script src="./js/menu.js"></script>
+</div>
+</body>
+</html>
