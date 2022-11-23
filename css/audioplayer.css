@@ -13,7 +13,7 @@ body {
 #myBar {
     width: 0%;
     height: 5px;
-    background-color: #a2832e;
+    background-color: #00000e;
     border-radius: 10px;
 }
 .btn-action {
@@ -38,7 +38,7 @@ body {
     margin-bottom: 8px;
     color: black;
     font-family: "SUISSEINTL-THIN";
-    font-size: 30px;
+    font-size: 16px;
 }
 .first-btn {
     margin-left: 3px;
@@ -58,7 +58,7 @@ body {
     background-color: transparent;
     margin: auto;
     margin-top: 100px;
-    box-shadow: black 0px 0px 10px;
+
 }
 .playlist-track-ctn {
     display: flex;
@@ -79,7 +79,7 @@ body {
 .playlist-info-track, .playlist-duration {
     padding-top: 7px;
     padding-bottom: 7px;
-    color: #a2832e;
+    color: #00000e;
     font-size: 14px;
     pointer-events: none;
 }
@@ -105,6 +105,6 @@ body {
 }
 
 .fas {
-    color: #a2832e;
-    font-size: 20px;
+    color: #00000e;
+    font-size: 14px;
 }

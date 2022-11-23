@@ -7,12 +7,11 @@
     <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
     <title>PORTIKUS</title>
     <link rel="stylesheet" href="./image/favi.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/estilos2.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel=stylesheet href="./css/audioplayer.css" media=all>
     <link rel="stylesheet" href="responsive-nav.css">
     <script src="responsive-nav.js"></script>
-
 </head>
 <body>
 <header class="hero">
@@ -21,33 +20,31 @@
             <h2 class="nav__title" style="color:black">INFLORESCENCE</h2>
             <h2 class="nav__title" style="color:black">Ximena Garrido-Lecca</h2>
         </div>
-
         <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">PORTIKUS</a>
+            </li>
             <li class="nav__items">
                 <a href="About.html" class="nav__links">About</a>
             </li>
             <li class="nav__items">
                 <a href="Archive.html" class="nav__links">Archive</a>
             </li>
-            <li class="nav__items">
-                <a href="index.html" class="nav__links">PORTIKUS</a>
+            <li>
+                <div class="pulse red live" style="display:inline-block">
+                    <h2 style="color:black; display: inline-block; padding: 0px">...LIVE</h2>
+                </div>
             </li>
-
+            <li class="nav__items">
+                <div class="audio">
+                    <audio autoplay src="http://radioinflorescence.out.airtime.pro:8000/radioinflorescence_a"
+                           type="audio/ogg" style="display: inline-block"></audio>
+                    <div style="display: inline-block;background: transparent">
+                        <button onclick="document.getElementById('player').play()">▷</button>
+                        <button onclick="document.getElementById('player').pause()">☐</button>
+                    </div>
+                </div>
         </ul>
-        <div class="pulse red live" style="display:inline-block">
-            <span style="color:black">...LIVE</span>
-        </div>
-
-        <audio autoplay src="http://radioinflorescence.out.airtime.pro:8000/radioinflorescence_a"
-               type="audio/ogg" style="display: inline-block"></audio>
-        <div>
-            <button onclick="document.getElementById('player').play()">▷</button>
-            <button onclick="document.getElementById('player').pause()">☐</button>
-            <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
-            <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
-        </div>
-        </div>
-
     </nav>
 </header>
 

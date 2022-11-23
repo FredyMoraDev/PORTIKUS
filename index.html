@@ -12,7 +12,6 @@
     <link rel=stylesheet href="./css/audioplayer.css" media=all>
     <link rel="stylesheet" href="responsive-nav.css">
     <script src="responsive-nav.js"></script>
-
 </head>
 <body>
 <header class="hero">
@@ -21,59 +20,80 @@
             <h2 class="nav__title" style="color:black">INFLORESCENCE</h2>
             <h2 class="nav__title" style="color:black">Ximena Garrido-Lecca</h2>
         </div>
-
         <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="index.html" class="nav__links">PORTIKUS</a>
+            </li>
             <li class="nav__items">
                 <a href="About.html" class="nav__links">About</a>
             </li>
             <li class="nav__items">
                 <a href="Archive.html" class="nav__links">Archive</a>
             </li>
-            <li class="nav__items">
-                <a href="index.html" class="nav__links">PORTIKUS</a>
+            <li>
+                <div class="pulse red live" style="display:inline-block">
+                    <h2 style="color:black; display: inline-block; padding: 0px">...LIVE</h2>
+                </div>
             </li>
-
+            <li class="nav__items">
+                <div class="audio">
+                    <audio autoplay src="http://radioinflorescence.out.airtime.pro:8000/radioinflorescence_a"
+                           type="audio/ogg" style="display: inline-block"></audio>
+                    <div style="display: inline-block;background: transparent">
+                        <button onclick="document.getElementById('player').play()">▷</button>
+                        <button onclick="document.getElementById('player').pause()">☐</button>
+                    </div>
+                </div>
         </ul>
-        <div class="pulse red live" style="display:inline-block">
-            <span style="color:black">...LIVE</span>
-        </div>
-
-        <audio autoplay src="http://radioinflorescence.out.airtime.pro:8000/radioinflorescence_a"
-               type="audio/ogg" style="display: inline-block"></audio>
-        <div>
-            <button onclick="document.getElementById('player').play()">▷</button>
-            <button onclick="document.getElementById('player').pause()">☐</button>
-            <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
-            <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
-        </div>
-        </div>
-
     </nav>
 </header>
-
-
-<div class="container2">
-    <div class="container__text">
-        <h2 class="container__title">CREDITS</h2>
-        <h3 class="container__description">Director</h3>
-        <h4 class="container__description">Yasmil Raymond</h4><br>
-        <h3 class="container__description">Curators</h3>
-        <h4 class="container__description">Liberty Adrien & Carina Bukuts</h4><br>
-        <h3 class="container__description">PROJECT COORDINATION</h3>
-        <h4 class="container__description">Claudia Famulok & Nils Fock</h4><br>
-        <h3 class="container__description">PRESS</h3>
-        <h4 class="container__description">Mira Starke</h4><br>
-        <h3 class="container__description">TEACHER/PRODUCTION</h3>
-        <h4 class="container__description">Stefan Wleland</h4><br><br>
-
-        <div class="container2">
-            <h2>Upcoming broadcastings</h2>
-            <h4 style="color:#a2832e">25.11.22 | 02.12.22 | 09.12.22 | 23.12.22 | 06.01.23 | 13.01.23 | 27.01.23 |
-                03.02.23
-            </h4>
+<main>
+    <div class="container2">
+        <div class="container__text">
+            <h2 class="container__title">CREDITS</h2><br><br>
+            <h3 class="container__description">Director</h3>
+            <h4 class="container__description">Yasmil Raymond</h4><br>
+            <h3 class="container__description">Curators</h3>
+            <h4 class="container__description">Liberty Adrien & Carina Bukuts</h4><br>
+            <h3 class="container__description">PROJECT COORDINATION</h3>
+            <h4 class="container__description">Claudia Famulok & Nils Fock</h4><br>
+            <h3 class="container__description">PRESS</h3>
+            <h4 class="container__description">Mira Starke</h4><br>
+            <h3 class="container__description">TEACHER/PRODUCTION</h3>
+            <h4 class="container__description">Stefan Wleland</h4><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="container3">
+                <h2>Upcoming Broadcastings</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>25.11.22</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>02.12.22</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>09.12.22</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>23.12.22</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>06.01.23</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>13.01.23</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>27.01.23</h4></a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links"><h4>03.02.23</h4></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+</main>
+
 <script type="text/javascript">
     window.addEventListener("scroll", function () {
         var header = document.querySelector("nav");
